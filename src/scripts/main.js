@@ -1,16 +1,12 @@
-import Swiper from 'swiper/bundle';
+import './modules/silder';
+import timeLine from './modules/timeline';
+import animation from './modules/animation';
 
 window.addEventListener("DOMContentLoaded", () => {
 
-  const headerSwiper = new Swiper('.header__swiper-container', {
-    autoplay:{
-      delay:5000
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-    },
-  });
+timeLine('.timeline__item');
+// animation();
+
 
 
 

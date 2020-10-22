@@ -40,6 +40,9 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.desktop{
+margin-left: 150px;
+}
 
 .btn {
   background-color: $red;
@@ -55,13 +58,13 @@ body {
 }
 
 .section__title {
-  padding-left: 160px;
+  padding-left: 150px;
   padding-top: 50px;
   position: relative;
   margin-bottom: 40px;
   h3 {
     font-weight: 800;
-    font-size: 34px;
+    font-size: 40px;
     margin-bottom: 10px;
   }
   &:after {
@@ -71,4 +74,19 @@ body {
     height: 3px;
     background-color: $red;
   }
+}
+
+.inview{
+  transform: none;
+  visibility: visible;
+  transform: translate3d(0px, 0, 0);
+  opacity: 1;
+  transition: all 0.3s ease-in;
+}
+
+.outview{
+  visibility: hidden;
+  opacity: 0;
+  transform: translate3d(-200px, 0, 0);
+  transition: all 0.5s ease-out;
 }

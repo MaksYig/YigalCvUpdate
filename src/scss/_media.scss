@@ -1,0 +1,29 @@
+@media(max-width:1315px){
+  .assidebar{
+    display: none;
+  }
+  .desktop{
+    margin: auto;
+  }
+  .section__title {
+    padding-left: 50px;
+  }
+  .header .header__swiper-container .swiper-wrapper .swiper-slide .header__swiper-slide-wrapper{
+    padding-left: 0;
+  }
+  .lastwork__wrapper{
+    padding-left: 50px;
+  }
+  .topbar{
+    display: block;
+  }
+}
+
+@media(max-width:1060px){
+  .topbar{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+}

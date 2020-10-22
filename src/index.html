@@ -7,62 +7,295 @@
     <meta name="description" content=" " />
     <meta name="keywords" content="" />
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="site">
-    <main class="site-content" >
-@@include('./_assideBar.html')
-@@include('./_header.html')
+    <main class="site-content">
+      @@include('./_assideBar.html') 
+      @@include('./_topBar.html') 
+      @@include('./_burger.html')
+      @@include('./_mobileMenu.html')
+      @@include('./_header.html')
 
-<section class="aboutme">
-  <div class="container">
-    <div class="section__title">
-      <h3>About Me</h3>
-    </div>
-    <div class="aboutme__wrapper">
-      <div class="aboutme__content">
-        <div class="aboutme__promo-text">
-          <h5>I like to create and I like to comprehend new knowledge in web development. I'll be delighted to bring your new project to reality. Will join team to create something beautiful, or will take remotly orders.  </h5>
+      <section class="aboutme desktop">
+        <div class="container">
+          <div class="section__title">
+            <h3>About Me</h3>
+          </div>
+          <div class="aboutme__wrapper desktop">
+            <div class="aboutme__content">
+              <div class="aboutme__promo-text">
+                <h5>
+                  I like to create and I like to comprehend new knowledge in web
+                  development. I'll be delighted to bring your new project to
+                  reality. Will join team to create something beautiful, or will
+                  take remotly orders.
+                </h5>
+              </div>
+              <div class="aboutme__infobox">
+                <li class="aboutme__infobox-item">
+                  My name:
+                  <span class="aboutme__infobox-text">Yigal Igor Maksimov</span>
+                </li>
+                <li class="aboutme__infobox-item">
+                  My Age:
+                  <span class="aboutme__infobox-text"> 36 years</span>
+                </li>
+                <li class="aboutme__infobox-item">
+                  My Email:
+                  <a
+                    class="aboutme__infobox-link"
+                    href="mailto:maksylfd@gmail.com"
+                    >maksylfd@gmail.com</a
+                  >
+                </li>
+                <li class="aboutme__infobox-item">
+                  My Web-site:
+                  <a class="aboutme__infobox-link" href="https://maksydev.site"
+                    >https://maksydev.site</a
+                  >
+                </li>
+                <li class="aboutme__infobox-item">
+                  Current Location:
+                  <span class="aboutme__infobox-text">Greece, Athens</span>
+                </li>
+                <li class="aboutme__infobox-item">
+                  Position:
+                  <span class="aboutme__infobox-text"
+                    >Web Front End Developer</span
+                  >
+                </li>
+                <div class="downloadcv">
+                  Download and Save my <a class="download btn" download href="###">My CV file</a>
+                </div>
+              </div>
+            </div>
+            <div class="aboutme__avatar">
+              <img
+                class="aboutme__avatar-img"
+                src="images/aboutme/about__avatar.jpg"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-        <div class="aboutme__infobox">
-          <li class="aboutme__infobox-item">
-            My name:
-            <span class="aboutme__infobox-text" >Yigal Igor Maksimov</span>
-          </li>
-          <li class="aboutme__infobox-item">
-            My Age:
-            <span class="aboutme__infobox-text" > 36 </span>
-          </li>
-          <li class="aboutme__infobox-item">
-            My Email:
-            <a class="aboutme__infobox-link" href="emailto:maksylfd@gmail.com">maksylfd@gmail.com</a>
-          </li>
-          <li class="aboutme__infobox-item">
-            My Web-site:
-            <a class="aboutme__infobox-link" href="https://maksydev.site/">https://maksydev.site/</a>
-          </li>
-          <li class="aboutme__infobox-item">
-            Current Location:
-            <span class="aboutme__infobox-text" >Greece, Athens</span>
-          </li>
+      </section>
+
+      <section class="lastwork desktop">
+        <div class="container">
+          <div class="section__title">
+            <h3>My Last Works</h3>
+          </div>
+          <div class="lastwork__wrapper desktop ">
+            <div class="lastwork__swiper-container">
+              <div class="lastwork__swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="work-container">
+                    <div class="work__picture">
+                      <img src="images/works/landing/portfolio-2.jpg" alt="My Work" class="work__picture-img">
+                    </div>
+                    <div class="work__content">
+                      <div class="work__type">
+                        Landing Page
+                      </div>
+                      <div class="work__tile">
+                        Сharity assistance to children
+                      </div>
+                      <div class="work__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem odio quia quos odit eum amet praesentium minima, laborum temporibus vel a! Sapiente facilis repudiandae inventore molestias itaque, magni aperiam.
+                      </div>
+                      <a class="work__link btn" href="">Check Project Online</a>
+                      <div class="work__create-icons-list">
+                        Created With:
+                        <li class="work-create-icon icon-html5"></li>
+                        <li class="work-create-icon icon-css3"></li>
+                        <li class="work-create-icon icon-javascript"></li>
+                        <li class="work-create-icon icon-sass"></li>
+                        <li class="work-create-icon icon-gulp"></li>
+                        <li class="work-create-icon icon-webpack"></li>
+                        <li class="work-create-icon icon-github"></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="work-container">
+                    <div class="work__picture">
+                      <img src="images/works/landing/portfolio-2.jpg" alt="My Work" class="work__picture-img">
+                    </div>
+                    <div class="work__content">
+                      <div class="work__type">
+                        Landing Page
+                      </div>
+                      <div class="work__tile">
+                        Сharity assistance to children
+                      </div>
+                      <div class="work__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem odio quia quos odit eum amet praesentium minima, laborum temporibus vel a! Sapiente facilis repudiandae inventore molestias itaque, magni aperiam.
+                      </div>
+                      <a class="work__link btn" href="">Check Project Online</a>
+                      <div class="work__create-icons-list">
+                        Created With:
+                        <li class="work-create-icon icon-html5"></li>
+                        <li class="work-create-icon icon-css3"></li>
+                        <li class="work-create-icon icon-javascript"></li>
+                        <li class="work-create-icon icon-sass"></li>
+                        <li class="work-create-icon icon-gulp"></li>
+                        <li class="work-create-icon icon-webpack"></li>
+                        <li class="work-create-icon icon-github"></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="work-container">
+                    <div class="work__picture">
+                      <img src="images/works/landing/portfolio-2.jpg" alt="My Work" class="work__picture-img">
+                    </div>
+                    <div class="work__content">
+                      <div class="work__type">
+                        Landing Page
+                      </div>
+                      <div class="work__tile">
+                        Сharity assistance to children
+                      </div>
+                      <div class="work__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem odio quia quos odit eum amet praesentium minima, laborum temporibus vel a! Sapiente facilis repudiandae inventore molestias itaque, magni aperiam.
+                      </div>
+                      <a class="work__link btn" href="">Check Project Online</a>
+                      <div class="work__create-icons-list">
+                        Created With:
+                        <li class="work-create-icon icon-html5"></li>
+                        <li class="work-create-icon icon-css3"></li>
+                        <li class="work-create-icon icon-javascript"></li>
+                        <li class="work-create-icon icon-sass"></li>
+                        <li class="work-create-icon icon-gulp"></li>
+                        <li class="work-create-icon icon-webpack"></li>
+                        <li class="work-create-icon icon-github"></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="work-container">
+                    <div class="work__picture">
+                      <img src="images/works/landing/portfolio-2.jpg" alt="My Work" class="work__picture-img">
+                    </div>
+                    <div class="work__content">
+                      <div class="work__type">
+                        Landing Page
+                      </div>
+                      <div class="work__tile">
+                        Сharity assistance to children
+                      </div>
+                      <div class="work__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam dolorem odio quia quos odit eum amet praesentium minima, laborum temporibus vel a! Sapiente facilis repudiandae inventore molestias itaque, magni aperiam.
+                      </div>
+                      <a class="work__link btn" href="">Check Project Online</a>
+                      <div class="work__create-icons-list">
+                        Created With:
+                        <li class="work-create-icon icon-html5"></li>
+                        <li class="work-create-icon icon-css3"></li>
+                        <li class="work-create-icon icon-javascript"></li>
+                        <li class="work-create-icon icon-sass"></li>
+                        <li class="work-create-icon icon-gulp"></li>
+                        <li class="work-create-icon icon-webpack"></li>
+                        <li class="work-create-icon icon-github"></li>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev icon-arrow-circle-left"></div>
+            <div class="swiper-button-next icon-arrow-circle-right"></div>
+          </div>
         </div>
-      </div>
-      <div class="aboutme__avatar">
-        <img class="aboutme__avatar-img" src="" alt="">
-      </div>
-    </div>
-  </div>
-</section>
+      </section>
+
+      <section class="education desktop">
+        <div class="container">
+          <div class="section__title">
+            <h3>My Education</h3>
+          </div>
+          <div class="education__wrapper desktop">
+            <section class="timeline">
+              <ul class="timeline__list">
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>2020 <span>Online couгses</span></time>
+                    <p>1. Passed an intensive online course for web developers (HTML5, CSS3, JQuery).</p>
+                    <p>2. Passed an intensive online course of Javascript (ES6) and ReactJs.</p>
+                    <p>3. Passed an intensive practical advanced course of Javascript (ES6).</p>  
+                  </div>
+                </li>
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>2018 <span>Self studying</span></time>
+                    Started to learn from scratch using all kinds of Internet resources.Learning the basics of HTML, CSS, BEM.
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="work desktop">
+        <div class="container">
+          <div class="section__title">
+            <h3>My Work Expirience</h3>
+          </div>
+          <div class="work desktop">
+            <section class="timeline">
+              <ul class="timeline__list">
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>2019-2020 <span>Freelance</span></time>
+                        Creation of several projects through a freelance exchange.
+                        On such platforms as: Upwork, FIverr.
+                        Website development for acquaintances to improve their own qualifications
+                  </div>
+                </li>
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>2018-2019 <span>Technical support for one of the most known Technology Brand</span></time>
+                    (Position is not related to web development)
+                  </div>
+                </li>
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>2015-2018 <span>Own food production business</span></time>
+                    (Position is not related to web development)
+                  </div>
+                </li>
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>2013-2015 <span>Production Manager on Electronic Factory.</span></time>
+                    (Position is not related to web development)
+                  </div>
+                </li>
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>2004-2013 <span>Military service.</span></time>
+                    (Position is not related to web development)
+                  </div>
+                </li>
+              </ul>
+            </section>
+          </div>
+        </div>
+      </section>
 
 
 
-
-
-
-  </main>
-@@include('./_footer.html')
+    </main>
+    @@include('./_footer.html')
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
