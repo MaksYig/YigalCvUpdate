@@ -39,19 +39,19 @@
     </div>
     <menu class="assidebar__menu">
       <li class="assidebar__menu-list">
-        <a class="assidebar__menu-list-link" href="#">Home</a>
+        <a class="assidebar__menu-list-link" href="./index.html">Home</a>
       </li>
       <li class="assidebar__menu-list">
-        <a class="assidebar__menu-list-link" href="#">About Me</a>
+        <a class="assidebar__menu-list-link" href="#aboutme">About Me</a>
       </li>
       <li class="assidebar__menu-list">
-        <a class="assidebar__menu-list-link" href="#">Education</a>
+        <a class="assidebar__menu-list-link" href="#education">Education</a>
       </li>
       <li class="assidebar__menu-list">
-        <a class="assidebar__menu-list-link" href="#">Work Expirience</a>
+        <a class="assidebar__menu-list-link" href="#work">Work Expirience</a>
       </li>
       <li class="assidebar__menu-list">
-        <a class="assidebar__menu-list-link" href="#">My Skils</a>
+        <a class="assidebar__menu-list-link" href="#skills">My Skils</a>
       </li>
       <li class="assidebar__menu-list">
         <a class="assidebar__menu-list-link" href="#">My Portfolio</a>
@@ -60,7 +60,7 @@
         <a class="assidebar__menu-list-link" href="#">My Offers</a>
       </li>
       <li class="assidebar__menu-list">
-        <a class="assidebar__menu-list-link" href="#">My Contacts</a>
+        <a class="assidebar__menu-list-link" href="#contact">My Contacts</a>
       </li>
     </menu>
   </div>
@@ -174,7 +174,7 @@
 </header>
 
 
-      <section class="aboutme desktop">
+      <section class="aboutme desktop" id="aboutme">
         <div class="container">
           <div class="section__title">
             <h3>About Me</h3>
@@ -237,8 +237,8 @@
           </div>
         </div>
       </section>
-
-      <section class="lastwork desktop">
+    
+      <section class="lastwork desktop" id="lastwork">
         <div class="container">
           <div class="section__title">
             <h3>My Last Works</h3>
@@ -366,11 +366,15 @@
             </div>
             <div class="swiper-button-prev icon-arrow-circle-left"></div>
             <div class="swiper-button-next icon-arrow-circle-right"></div>
+            <div class="lastwork__button">
+            To see all my work's, follow to  <a class="lastwork__btn btn" href="#">Portfolio</a>
+            </div>
           </div>
+
         </div>
       </section>
-
-      <section class="education desktop">
+       
+      <section class="education desktop" id="education">
         <div class="container">
           <div class="section__title">
             <h3>My Education</h3>
@@ -397,13 +401,13 @@
           </div>
         </div>
       </section>
-
-      <section class="work desktop">
+      
+      <section class="work desktop" id="work">
         <div class="container">
           <div class="section__title">
             <h3>My Work Expirience</h3>
           </div>
-          <div class="work desktop">
+          <div class="work__wrapper desktop">
             <section class="timeline">
               <ul class="timeline__list">
                 <li class="timeline__item">
@@ -443,15 +447,154 @@
           </div>
         </div>
       </section>
-
+      
+      <section class="skills desktop" style="background-image: url('images/content/skills-bg.jpg');" id="skills">
+        <div class="container">
+          <div class="section__title white">
+            <h3>My Skills</h3>
+          </div>
+          <div class="skills__wrapper desktop">
+            <div class="skillls__bar-box">
+              <div class="skillsbar" data-target="85">
+                <div class="skillbar__title"><span>HTML</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="85">
+                <div class="skillbar__title"><span>CSS3</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="70">
+                <div class="skillbar__title"><span>Javascript</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar language" data-target="75">
+                <div class="skillbar__title">
+                  <img src="images/flags/English.png" alt="">
+                  <span>English</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+            </div>
+            <div class="skillls__bar-box">
+              <div class="skillsbar" data-target="85">
+                <div class="skillbar__title"><span>SCSS</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="75">
+                <div class="skillbar__title"><span>Gulp</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="35">
+                <div class="skillbar__title"><span>Webpack</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar language" data-target="90">
+                <div class="skillbar__title">
+                  <img src="images/flags/Russia.png" alt="">
+                  <span>Russian</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+            </div>
+            <div class="skillls__bar-box">
+              <div class="skillsbar" data-target="45">
+                <div class="skillbar__title"><span>React</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="55">
+                <div class="skillbar__title"><span>Git</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="65">
+                <div class="skillbar__title"><span>Photoshop</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar language" data-target="90">
+                <div class="skillbar__title">
+                  <img src="images/flags/Israel.png" alt="">
+                  <span>Hebrew</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
 
     </main>
-    
+    <section class="contact desktop" id="contact">
+  <div class="container">
+    <div class="section__title">
+      <h3>My Contacts</h3>
+    </div>
+    <div class="contact__wrapper desktop">
+      <div class="contact__message-box">
+        <div class="contact__message-box-title">Please feel free to send me a message</div>
+       
+        <form class="contact__form">
+<!-- Hidden Required Fields -->
+<input type="hidden" name="project_name" value="Yigal CV Site">
+<input type="hidden" name="admin_email" value="maksylfd@gmail.com">
+<input type="hidden" name="form_subject" value="Message from CV Site Contacts">
+<!-- END Hidden Required Fields -->
+          <div class="form-control" data-status="false">
+            <input type="text" placeholder="Your name" class="contact__name" name="name" required/>
+            <img class="check" src="images/content/check.svg" alt=""></img>
+            <img class="replace" src="images/content/remove.svg" alt=""></img>
+            <span class="message">Error message</span>
+          </div>
+          <div class="form-control " data-status="false">
+            <input type="text" placeholder="Your email" class="contact__email" name="email" required/>
+            <img class="check" src="images/content/check.svg" alt=""></img>
+            <img class="replace" src="images/content/remove.svg" alt=""></img>
+            <span class="message">Error message</span>
+          </div>
+          <div class="form-control" data-status="false">
+            <textarea class="contact__message" name="message" cols="30" rows="6" placeholder="Your message here"></textarea>
+            <img class="check" src="images/content/check.svg" alt=""></img>
+            <img class="replace" src="images/content/remove.svg" alt=""></img>
+            <span class="message">Error message</span>
+          </div>
+          <button class="contact__btn btn" disabled='true'>Send message</button>
+        </form>
+      </div>
+      <div class="contact__info">
+        <li class="contact__info-list icon-home">
+          <span>Greece, Athens</span>
+        </li>
+        <li class="contact__info-list icon-envelope">
+          <a class="contact__info-link" href="mailto:maksylfd@gmail.com">maksylfd@gmail.com</a>
+        </li>
+        <li class="contact__info-list icon-phone-square">
+          <a class="contact__info-link" href="tel:678687687">+30 6943811801</a>
+        </li>
+        <div class="contact__info-social">
+          Follow me: 
+          <li class="contact__social-list"><a class="contact__social-link icon-linkedin-square" href=""></a></li>
+          <li class="contact__social-list"><a class="contact__social-link  icon-facebook-square" href=""></a></li>
+          <li class="contact__social-list"><a class="contact__social-link  icon-github-square" href=""></a></li>
+          <li class="contact__social-list "><a class="contact__social-link icon-telegram" href="" ></a></li>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   <footer class="footer">
    
     <div class="footer__copy">
-      ©2020 &nbsp<a href="#">MartPlace</a>. All rights reserved. Created by
+      ©2020 &nbsp<a href="#">My CV Page</a>. All rights reserved. Created by
       &nbsp<a href="https://maksydev.site/" target="_blank">Maksydev</a>
     </div>
   </div>

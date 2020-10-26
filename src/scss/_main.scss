@@ -75,9 +75,9 @@
     padding-left: 25px;
     &-list {
       color: #fff;
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 600;
-      line-height: 50px;
+      line-height: 45px;
       text-transform: uppercase;
       border-bottom: 1px solid #282835;
       &:hover,
@@ -91,8 +91,8 @@
 }
 /*  AssideBar end */
 /* burger Start */
-.burger__wrapper{
-position: relative;
+.burger__wrapper {
+  position: relative;
 }
 .burger {
   display: none;
@@ -314,6 +314,7 @@ position: relative;
       font-size: 16px;
       line-height: 26px;
       font-weight: 500;
+      padding: 0 15px;
     }
   }
   &__infobox {
@@ -380,7 +381,14 @@ position: relative;
 .lastwork {
   &__wrapper {
     position: relative;
-
+    .lastwork__button {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .lastwork__btn {
+    }
   }
   &__swiper-container {
     margin-left: auto;
@@ -401,6 +409,8 @@ position: relative;
       box-sizing: content-box;
       .swiper-slide {
         // margin-right: 3px;
+        justify-content: center;
+        display: flex;
       }
     }
   }
@@ -493,15 +503,20 @@ position: relative;
 
 /* last works section end */
 
-
 /* education section start */
-.education{
-
+.education {
+  &__wrapper{
+    overflow: hidden;
+  }
 }
 /* education section start */
 
 /* timeline for education an for work start */
-
+.work{
+  &__wrapper{
+    overflow: hidden;
+  }
+}
 .timeline {
   &__list {
     padding: 50px 0;
@@ -516,10 +531,10 @@ position: relative;
     color: #fff;
     font-size: 14px;
     line-height: 22px;
-    &:after{
+    &:after {
       content: "";
       position: absolute;
-      left: 50%;
+      left: 0%;
       bottom: 0;
       transform: translateX(-50%);
       width: 30px;
@@ -527,23 +542,22 @@ position: relative;
       border-radius: 50%;
       background: inherit;
     }
-    &:nth-child(odd) .timeline__item-inner{
+    &:nth-child(odd) .timeline__item-inner {
       left: 45px;
     }
-    &:nth-child(odd) .timeline__item-inner::before{
+    &:nth-child(odd) .timeline__item-inner::before {
       left: -15px;
       border-width: 8px 16px 8px 0;
       border-color: transparent #353541 transparent transparent;
     }
-    &:nth-child(even) .timeline__item-inner{
+    &:nth-child(even) .timeline__item-inner {
       left: -439px;
     }
-    &:nth-child(even) .timeline__item-inner::before{
+    &:nth-child(even) .timeline__item-inner::before {
       right: -15px;
       border-width: 8px 0 8px 16px;
       border-color: transparent transparent transparent #353541;
     }
-
   }
   &__item-inner {
     position: relative;
@@ -551,7 +565,7 @@ position: relative;
     width: 400px;
     padding: 15px;
     background: #353541;
-    &:before{
+    &:before {
       content: "";
       position: absolute;
       bottom: 7px;
@@ -559,18 +573,17 @@ position: relative;
       height: 0;
       border-style: solid;
     }
-    time{
+    time {
       display: block;
       font-size: 1.2rem;
       font-weight: bold;
       margin-bottom: 8px;
       color: #fff;
-      span{
+      span {
         color: $red;
       }
     }
   }
-
 }
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -605,7 +618,7 @@ position: relative;
 
 /* GENERAL MEDIA QUERIES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media(max-width:1200px){
+@media (max-width: 1200px) {
   .timeline__item:nth-child(odd) .timeline__item-inner {
     left: 35px;
   }
@@ -619,17 +632,13 @@ position: relative;
     /*250+45-6*/
   }
 }
-@media(max-width:830px){
+@media (max-width: 700px) {
   .timeline__item:nth-child(even) .timeline__item-inner {
     left: 35px;
   }
-}
-@media(max-width: 670px){
   .timeline__item .timeline__item-inner {
-    width: calc(100vw - 135px);
+    width: calc(100vw - 100px);
   }
-}
-@media screen and (max-width: 600px) {
   .timeline__item {
     margin-left: 20px;
   }
@@ -640,4 +649,235 @@ position: relative;
     border-color: transparent #f45b69 transparent transparent;
   }
 }
+// @media (max-width: 670px) {
+//   .timeline__item .timeline__item-inner {
+//     width: calc(100vw - 135px);
+//   }
+// }
+// @media screen and (max-width: 600px) {
+//   .timeline__item {
+//     margin-left: 20px;
+//   }
+
+//   .timeline__item:nth-child(even) .timeline__item-inner::before {
+//     left: -15px;
+//     border-width: 8px 16px 8px 0;
+//     border-color: transparent #f45b69 transparent transparent;
+//   }
+// }
 /* timeline for education an for work end */
+
+/* slills bar start */
+.skills {
+  padding-bottom: 50px;
+  background-position-x: center;
+  background-position-y: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(65, 65, 65, 0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    // right: 0;
+    // bottom: 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skillls__bar-box {
+    width: 30%;
+  }
+  .skillsbar {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+    // max-width: 320px;
+    width: 100%;
+    background: rgba(123, 123, 123, 0.964);
+    height: 35px;
+    border-radius: 5px;
+    transition: 0.4s linear;
+    transition-property: width, background-color;
+  }
+  .skillbar__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    background: transparent;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    img {
+      position: absolute;
+      width: 20px;
+      top: -2px;
+      right: -5px;
+    }
+
+    span {
+      display: inline-block;
+      background: rgba(0, 0, 0, 0.1);
+      padding: 0 20px;
+      height: 35px;
+      line-height: 35px;
+      border-top-left-radius: 3px;
+      border-bottom-left-radius: 3px;
+    }
+  }
+
+  .skillbar__bar {
+    height: 35px;
+    width: 0px;
+    background: $red;
+    border-radius: 5px;
+  }
+  .skillbar__bar-target {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 14px;
+    font-weight: 600;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+  }
+}
+
+/* slills bar end */
+
+/* section contact start */
+.contact{
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 45px;
+  }
+  &__message-box{
+    max-width: 40%;
+    width: 100%;
+    
+  }
+  &__message-box-title{
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+
+  }
+  &__message-box-text{
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  &__info{
+    max-width: 40%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &-list{
+      font-size: 36px;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+
+      &:nth-child(2){
+        font-size: 32px;
+      }
+      &:nth-child(3){
+        font-size: 34px;
+      }
+      span{
+        font-size: 24px;
+        margin-left: 35px;
+      }
+      a{
+        font-size: 24px;
+        margin-left: 35px;
+        &:hover,
+      &:active {
+        color: $red;
+        transform: scale(1.1);
+        font-weight: 600;
+      }
+      }
+    }
+    &-social{
+      padding-top: 35px;
+      font-weight: 700;
+
+      li{
+        display: inline-block;
+        margin-left: 15px;
+        a{
+          font-size: 20px;
+          &:hover,
+      &:active {
+        transform: scale(1.4);
+        color: $red;
+      }
+        }
+      }
+
+    }
+  }
+}
+
+
+.contact__form {
+  .form-control {
+    margin-bottom: 14px;
+    padding-bottom: 5px;
+    position: relative;
+    .message {
+      display: none;
+      position: absolute;
+      font-size: 11px;
+      padding-left: 10px;
+      color: red;
+      // margin-top: 5px;
+      bottom: -10px;
+    }
+    input,textarea{
+      border: 2px solid #f0f0f0;
+      border-radius: 4px;
+      display: block;
+      font-family: inherit;
+      font-size: 16px;
+      padding: 10px 25px 10px 15px;
+      width: 100%;
+      font-weight: 600;
+    }
+    .check,.replace {
+      visibility: hidden;
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      width: 15px;
+    
+    }
+    input:focus {
+      outline: 0;
+      border-color: #777;
+    }
+    
+  }
+  button:disabled {
+    background-color: rgba(251, 101, 113, 0.55);
+    color: #fff;
+    display: block;
+  }
+}
+
+/* section contact end */

@@ -22,7 +22,7 @@
       @@include('./_mobileMenu.html')
       @@include('./_header.html')
 
-      <section class="aboutme desktop">
+      <section class="aboutme desktop" id="aboutme">
         <div class="container">
           <div class="section__title">
             <h3>About Me</h3>
@@ -85,8 +85,8 @@
           </div>
         </div>
       </section>
-
-      <section class="lastwork desktop">
+    
+      <section class="lastwork desktop" id="lastwork">
         <div class="container">
           <div class="section__title">
             <h3>My Last Works</h3>
@@ -214,11 +214,15 @@
             </div>
             <div class="swiper-button-prev icon-arrow-circle-left"></div>
             <div class="swiper-button-next icon-arrow-circle-right"></div>
+            <div class="lastwork__button">
+            To see all my work's, follow to  <a class="lastwork__btn btn" href="#">Portfolio</a>
+            </div>
           </div>
+
         </div>
       </section>
-
-      <section class="education desktop">
+       
+      <section class="education desktop" id="education">
         <div class="container">
           <div class="section__title">
             <h3>My Education</h3>
@@ -245,13 +249,13 @@
           </div>
         </div>
       </section>
-
-      <section class="work desktop">
+      
+      <section class="work desktop" id="work">
         <div class="container">
           <div class="section__title">
             <h3>My Work Expirience</h3>
           </div>
-          <div class="work desktop">
+          <div class="work__wrapper desktop">
             <section class="timeline">
               <ul class="timeline__list">
                 <li class="timeline__item">
@@ -291,7 +295,89 @@
           </div>
         </div>
       </section>
-
+      
+      <section class="skills desktop" style="background-image: url('images/content/skills-bg.jpg');" id="skills">
+        <div class="container">
+          <div class="section__title white">
+            <h3>My Skills</h3>
+          </div>
+          <div class="skills__wrapper desktop">
+            <div class="skillls__bar-box">
+              <div class="skillsbar" data-target="85">
+                <div class="skillbar__title"><span>HTML</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="85">
+                <div class="skillbar__title"><span>CSS3</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="70">
+                <div class="skillbar__title"><span>Javascript</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar language" data-target="75">
+                <div class="skillbar__title">
+                  <img src="images/flags/English.png" alt="">
+                  <span>English</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+            </div>
+            <div class="skillls__bar-box">
+              <div class="skillsbar" data-target="85">
+                <div class="skillbar__title"><span>SCSS</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="75">
+                <div class="skillbar__title"><span>Gulp</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="35">
+                <div class="skillbar__title"><span>Webpack</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar language" data-target="90">
+                <div class="skillbar__title">
+                  <img src="images/flags/Russia.png" alt="">
+                  <span>Russian</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+            </div>
+            <div class="skillls__bar-box">
+              <div class="skillsbar" data-target="45">
+                <div class="skillbar__title"><span>React</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="55">
+                <div class="skillbar__title"><span>Git</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar" data-target="65">
+                <div class="skillbar__title"><span>Photoshop</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+              <div class="skillsbar language" data-target="90">
+                <div class="skillbar__title">
+                  <img src="images/flags/Israel.png" alt="">
+                  <span>Hebrew</span></div>
+                <div class="skillbar__bar"></div>
+                <div class="skillbar__bar-target">0%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
 
 
     </main>

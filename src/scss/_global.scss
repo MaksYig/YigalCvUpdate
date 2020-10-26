@@ -67,6 +67,11 @@ margin-left: 150px;
     font-size: 40px;
     margin-bottom: 10px;
   }
+  &.white{
+    h3{
+      color: #fff;
+    }
+  }
   &:after {
     content: "";
     position: absolute;
@@ -89,4 +94,19 @@ margin-left: 150px;
   opacity: 0;
   transform: translate3d(-200px, 0, 0);
   transition: all 0.5s ease-out;
+}
+
+/* footer */
+
+.footer{
+  background-color: $bg;
+  &__copy{
+    font-size: 14px;
+    color: #fff;
+    line-height: 28px;
+    text-align: center;
+    a:hover{
+      color: $red;
+    }
+  }
 }
