@@ -34,7 +34,9 @@ body {
   color: #3e3e3e;
   font-weight: 400;
 }
-
+body.active{
+  overflow: hidden;
+}
 .container {
   max-width: 1300px;
   margin: 0 auto;

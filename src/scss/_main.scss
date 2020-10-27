@@ -96,13 +96,12 @@
 }
 .burger {
   display: none;
-  content: "";
   position: fixed;
   width: 35px;
   height: 30px;
   left: 20px;
   top: 15px;
-  z-index: 10;
+  z-index: 150;
   cursor: pointer;
   &__line1,
   &__line2,
@@ -126,13 +125,11 @@
 }
 
 .burger.active {
-  content: "";
-  position: absolute;
   width: 35px;
   height: 30px;
   left: 20px;
   top: 15px;
-  z-index: 10;
+  z-index: 150;
   cursor: pointer;
   .burger__line1,
   .burger__line2,
@@ -222,7 +219,206 @@
 }
 
 /* Top bar end */
+/* mobile menu Start */
+.mobile{
+top:-250%;
+position: absolute;
+transition: all 0.5s ease;
+background-color: $bg;
+max-width: 100%;
+left: 0;
+bottom: 0;
+right: 0;
+// box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
+z-index: 100;
+overflow: auto;
+height: 100vh;
+position: fixed;
 
+.mobile__wrapper {
+
+}
+.mobile__logo {
+  position: relative;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   background-color: rgba(0, 0, 0, 0.3);
+  //   top: 0;
+  //   right: 0;
+  //   left: 0;
+  //   bottom: 0;
+  // }
+  .mobile__logo-img {
+    width: 100%;
+    display: block;
+    height: 40vh;
+    object-fit: contain;
+    
+  }
+  .mobile__logo-name {
+    position: absolute;
+    color: #fff;
+    bottom: 35px;
+    left: 0px;
+    right: 0px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .mobile__logo-position {
+    position: absolute;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    bottom: 10px;
+    text-align: center;
+    left: 0;
+    right: 0;
+  }
+}
+.mobile__social {
+  display: flex;
+  // justify-content: space-around;
+  padding: 10px 0;
+  border-bottom: 1px solid #282835;
+  .mobile__social-list {
+    display: inline-block;
+    margin: 0 auto;
+    &-link {
+      &.icon-telegram,
+      &.icon-facebook-square,
+      &.icon-linkedin-square,
+      &.icon-github-square {
+        color: #fff;
+        font-size: 20px;
+        line-height: 30px;
+      }
+      &:hover,
+      &:focus {
+        color: $red;
+        transform: scale(1.5);
+      }
+    }
+  }
+}
+.mobile__menu {
+  text-align: center;
+  &-list {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #282835;
+    &:hover,
+    &:focus {
+      color: $red;
+    }
+  }
+  &-link {
+  }
+}
+}
+.mobile.active {
+  background-color: $bg;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
+  z-index: 100;
+  overflow: auto;
+  height: 100vh;
+  .mobile__wrapper {
+
+  }
+  .mobile__logo {
+    position: relative;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background-color: rgba(0, 0, 0, 0.3);
+    //   top: 0;
+    //   right: 0;
+    //   left: 0;
+    //   bottom: 0;
+    // }
+    .mobile__logo-img {
+      width: 100%;
+      display: block;
+      height: 40vh;
+      object-fit: contain;
+      
+    }
+    .mobile__logo-name {
+      position: absolute;
+      color: #fff;
+      bottom: 35px;
+      left: 0px;
+      right: 0px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .mobile__logo-position {
+      position: absolute;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      bottom: 10px;
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+  }
+  .mobile__social {
+    display: flex;
+    // justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid #282835;
+    .mobile__social-list {
+      display: inline-block;
+      margin: 0 auto;
+      &-link {
+        &.icon-telegram,
+        &.icon-facebook-square,
+        &.icon-linkedin-square,
+        &.icon-github-square {
+          color: #fff;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        &:hover,
+        &:focus {
+          color: $red;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+  .mobile__menu {
+    text-align: center;
+    &-list {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 40px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #282835;
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+    &-link {
+    }
+  }
+}
+
+
+/* mobile menu End */
 /* header Index start */
 .header {
   .header__swiper-container {
