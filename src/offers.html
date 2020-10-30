@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="site">
+    <main class="site-content">
+      @@include('./_modal.html') @@include('./_assideBar.html')
+      @@include('./_topBar.html') @@include('./_burger.html')
+      @@include('./_mobileMenu.html') @@include('./_header-offers.html')
+
+      <section class="offers desktop">
+        <div class="container">
+          <div class="offers__wrapper desktop">
+            <div class="offers__box">
+              <div class="offers__title">
+                Start Plan
+              </div>
+              <div class="offers__price">
+                <span>$</span>49<span>.99</span>
+              </div>
+              <div class="offers__content">
+                <div class="offers__content-text">
+                  What this plan include:
+                </div>
+                <li class="offers__content-list">1 (one) website page</li>
+                <li class="offers__content-list">Up to 5 section on the page</li>
+                <li class="offers__content-list">Content filling</li>
+                <li class="offers__content-list">1 (one) contact form</li>
+                <li class="offers__content-list">1 (one) slider</li>
+                <li class="offers__content-list">CrossBrowsing</li>
+                <li class="offers__content-list">Mobile adaptive</li>
+              </div>
+              <button class="offers__btn btn">Order Now</button>
+            </div>
+            <div class="offers__box">
+              <div class="offers__title">
+                Basic Plan
+              </div>
+              <div class="offers__price">
+                <span>$</span>95<span>.00</span>
+              </div>
+              <div class="offers__content">
+                <div class="offers__content-text">
+                  What this plan include:
+                </div>
+                <li class="offers__content-list">2 (two) website page</li>
+                <li class="offers__content-list">Up to 8 section on the page</li>
+                <li class="offers__content-list">Content filling</li>
+                <li class="offers__content-list">2 (two) contact form's</li>
+                <li class="offers__content-list">2 (two) slider's</li>
+                <li class="offers__content-list">Installing on hosting</li>
+                <li class="offers__content-list">CrossBrowsing</li>
+                <li class="offers__content-list">Mobile adaptive</li>
+              </div>
+              <button class="offers__btn btn">Order Now</button>
+            </div>
+            <div class="offers__box">
+              <div class="offers__title">
+                Basic Plan
+              </div>
+              <div class="offers__price">
+                <span>$</span>130<span>.00</span>
+              </div>
+              <div class="offers__content">
+                <div class="offers__content-text">
+                  What this plan include:
+                </div>
+                <li class="offers__content-list">2 (two) website page</li>
+                <li class="offers__content-list">Up to 8 section on the page</li>
+                <li class="offers__content-list">Content filling</li>
+                <li class="offers__content-list">2 (one) contact form</li>
+                <li class="offers__content-list">2 (one) slider</li>
+                <li class="offers__content-list">Installing on hosting</li>
+                <li class="offers__content-list">CrossBrowsing</li>
+                <li class="offers__content-list">Mobile adaptive</li>
+              </div>
+              <button class="offers__btn btn">Order Now</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calculator desktop">
+        <div class="container">
+          <div class="section__title">
+            <h3>Online Calculator</h3>
+          </div>
+          <div class="calculator__wrapper desktop">
+            <div class="calculator__text">
+              Here you can check the avarige price of your future web site
+            </div>
+            <div class="calculator__inner">
+              @@include('./_calculatorForm.html')
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('./_footer.html')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/main.bundle.js"></script>
+  </body>
+</html>

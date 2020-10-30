@@ -58,9 +58,8 @@ margin-left: 150px;
   cursor: pointer;
   text-align: center;
   &:hover{
-    transform: scale(1.1);
-    box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
-
+    // box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
+    // text-shadow: -1px 0 $bg, 0 1px $bg, 1px 0 $bg, 0 -1px $bg;
   }
 }
 

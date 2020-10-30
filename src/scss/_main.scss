@@ -573,7 +573,7 @@
   &__wrapper {
     position: relative;
     .lastwork__button {
-      margin-top: 40px;
+      margin-top: 10px;
       text-align: center;
       font-size: 18px;
       font-weight: 600;
@@ -589,6 +589,7 @@
     list-style: none;
     padding: 0;
     z-index: 1;
+    padding-bottom: 30px;
 
     .lastwork__swiper-wrapper {
       position: relative;
@@ -602,6 +603,7 @@
         // margin-right: 3px;
         justify-content: center;
         display: flex;
+        height: auto;
       }
     }
   }
@@ -1122,9 +1124,12 @@
     display: flex;
     justify-content: space-around;
     &-btn{
-
+      position: relative;
       &:hover,&:focus,&.active{
         background-color: $bg;
+        .portfolio__btn-num{
+          background-color: $red;
+        }
       }
     }
   }
@@ -1136,3 +1141,92 @@
 
   }
 }
+.portfolio__btn-num{
+  display: block;
+  position: absolute;
+  top: -22px;
+  right: 0px;
+  color: #fff;
+  background-color: $bg;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: -1;
+
+}
+
+
+/* ------------Offers PAGE-------------- */
+
+.offers{
+  &__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 70px;
+  }
+  &__box{
+    max-width: 340px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // background-color: grey;
+    font-family: 'Roboto', sans-serif;
+    border: 1.5px solid $bg;
+    padding: 30px 10px;
+
+  }
+  &__title{
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
+  &__price{
+    color: $red;
+    font-weight: 900;
+    font-size: 120px;
+    margin: 0 15px;
+
+    span{
+      font-size: 26px;
+      font-weight: 500;
+      color: $bg;
+    }
+  }
+  &__content{
+    margin-bottom: 25px;
+    &-text{
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    &-list{
+      color: $bg;
+      position: relative;
+      padding-left: 40px;
+      line-height: 30px;
+      font-size: 18px;
+      &::before{
+        position: absolute;
+        content: "\f046";
+        font-family: 'icomoon' !important;
+        font-size: 30px;
+        color: green;
+        top: 0;
+        left: 0;
+
+        
+      }
+    }
+  }
+  &__btn{
+
+  }
+}
+
+
