@@ -8,7 +8,7 @@
   box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
   z-index: 50;
   overflow: auto;
-  // height: 100vh;
+  height: 100vh;
   &__wrapper {
   }
   &__logo {
@@ -220,110 +220,12 @@
 
 /* Top bar end */
 /* mobile menu Start */
-.mobile{
-top:-250%;
-position: absolute;
-transition: all 0.5s ease;
-background-color: $bg;
-max-width: 100%;
-left: 0;
-bottom: 0;
-right: 0;
-// box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
-z-index: 100;
-overflow: auto;
-height: 100vh;
-position: fixed;
-
-.mobile__wrapper {
-
-}
-.mobile__logo {
-  position: relative;
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   background-color: rgba(0, 0, 0, 0.3);
-  //   top: 0;
-  //   right: 0;
-  //   left: 0;
-  //   bottom: 0;
-  // }
-  .mobile__logo-img {
-    width: 100%;
-    display: block;
-    height: 40vh;
-    object-fit: contain;
-    
-  }
-  .mobile__logo-name {
-    position: absolute;
-    color: #fff;
-    bottom: 35px;
-    left: 0px;
-    right: 0px;
-    font-size: 20px;
-    text-align: center;
-    font-weight: 600;
-  }
-  .mobile__logo-position {
-    position: absolute;
-    color: #fff;
-    font-size: 14px;
-    font-weight: 500;
-    bottom: 10px;
-    text-align: center;
-    left: 0;
-    right: 0;
-  }
-}
-.mobile__social {
-  display: flex;
-  // justify-content: space-around;
-  padding: 10px 0;
-  border-bottom: 1px solid #282835;
-  .mobile__social-list {
-    display: inline-block;
-    margin: 0 auto;
-    &-link {
-      &.icon-telegram,
-      &.icon-facebook-square,
-      &.icon-linkedin-square,
-      &.icon-github-square {
-        color: #fff;
-        font-size: 20px;
-        line-height: 30px;
-      }
-      &:hover,
-      &:focus {
-        color: $red;
-        transform: scale(1.5);
-      }
-    }
-  }
-}
-.mobile__menu {
-  text-align: center;
-  &-list {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 40px;
-    text-transform: uppercase;
-    border-bottom: 1px solid #282835;
-    &:hover,
-    &:focus {
-      color: $red;
-    }
-  }
-  &-link {
-  }
-}
-}
-.mobile.active {
+.mobile {
+  top: -250%;
+  position: absolute;
+  transition: all 0.5s ease;
   background-color: $bg;
   max-width: 100%;
-  top: 0;
   left: 0;
   bottom: 0;
   right: 0;
@@ -331,8 +233,9 @@ position: fixed;
   z-index: 100;
   overflow: auto;
   height: 100vh;
-  .mobile__wrapper {
+  position: fixed;
 
+  .mobile__wrapper {
   }
   .mobile__logo {
     position: relative;
@@ -350,7 +253,6 @@ position: fixed;
       display: block;
       height: 40vh;
       object-fit: contain;
-      
     }
     .mobile__logo-name {
       position: absolute;
@@ -416,7 +318,100 @@ position: fixed;
     }
   }
 }
-
+.mobile.active {
+  background-color: $bg;
+  max-width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  // box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
+  z-index: 100;
+  overflow: auto;
+  height: 100vh;
+  .mobile__wrapper {
+  }
+  .mobile__logo {
+    position: relative;
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   background-color: rgba(0, 0, 0, 0.3);
+    //   top: 0;
+    //   right: 0;
+    //   left: 0;
+    //   bottom: 0;
+    // }
+    .mobile__logo-img {
+      width: 100%;
+      display: block;
+      height: 40vh;
+      object-fit: contain;
+    }
+    .mobile__logo-name {
+      position: absolute;
+      color: #fff;
+      bottom: 35px;
+      left: 0px;
+      right: 0px;
+      font-size: 20px;
+      text-align: center;
+      font-weight: 600;
+    }
+    .mobile__logo-position {
+      position: absolute;
+      color: #fff;
+      font-size: 14px;
+      font-weight: 500;
+      bottom: 10px;
+      text-align: center;
+      left: 0;
+      right: 0;
+    }
+  }
+  .mobile__social {
+    display: flex;
+    // justify-content: space-around;
+    padding: 10px 0;
+    border-bottom: 1px solid #282835;
+    .mobile__social-list {
+      display: inline-block;
+      margin: 0 auto;
+      &-link {
+        &.icon-telegram,
+        &.icon-facebook-square,
+        &.icon-linkedin-square,
+        &.icon-github-square {
+          color: #fff;
+          font-size: 20px;
+          line-height: 30px;
+        }
+        &:hover,
+        &:focus {
+          color: $red;
+          transform: scale(1.5);
+        }
+      }
+    }
+  }
+  .mobile__menu {
+    text-align: center;
+    &-list {
+      color: #fff;
+      font-size: 20px;
+      font-weight: 600;
+      line-height: 40px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #282835;
+      &:hover,
+      &:focus {
+        color: $red;
+      }
+    }
+    &-link {
+    }
+  }
+}
 
 /* mobile menu End */
 /* header Index start */
@@ -615,29 +610,38 @@ position: fixed;
 .work-container {
   max-width: 320px;
   display: flex;
-  flex: 0 1 0 1 0;
+  // flex: 0 1 0 1 0;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: $bg;
   box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
   border-radius: 7px;
   padding-bottom: 20px;
+  margin-top: 30px;
+  flex: 1 0 auto;
+
 }
 .work__picture {
   max-width: 320px;
+  position: relative;
 }
 .work__picture-img {
   max-width: 320px;
-  height: 300px;
+  height: 215px;
   object-fit: cover;
   object-position: top;
   width: 100%;
   display: block;
   border-top-right-radius: 7px;
   border-top-left-radius: 7px;
+  cursor: pointer;
 }
 .work__content {
   padding: 0 15px;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100%; 
 }
 .work__type {
   padding-top: 15px;
@@ -701,15 +705,50 @@ position: fixed;
 
 /* education section start */
 .education {
-  &__wrapper{
+  &__wrapper {
     overflow: hidden;
   }
 }
 /* education section start */
+// start diplom section
+.diploms {
+  &__wrapper {
+  }
+  &__swiper-container {
+    .diploms__swiper-wrapper {
+      display: flex;
+      justify-content: space-around;
+      .swiper-slide {
+        flex-shrink: 1;
+      }
+    }
+  }
 
+  .diploms__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &-img {
+      max-width: 350px;
+      opacity: 0.7;
+      width: 100%;
+      cursor: pointer;
+      &:hover {
+        opacity: 1;
+      }
+    }
+    &-text {
+      font-weight: 600;
+      text-align: center;
+    }
+  }
+}
+// end diplom section
 /* timeline for education an for work start */
-.work{
-  &__wrapper{
+.work {
+  &__wrapper {
     overflow: hidden;
   }
 }
@@ -953,83 +992,79 @@ position: fixed;
 /* slills bar end */
 
 /* section contact start */
-.contact{
-  &__wrapper{
+.contact {
+  &__wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 45px;
   }
-  &__message-box{
+  &__message-box {
     max-width: 40%;
     width: 100%;
-    
   }
-  &__message-box-title{
+  &__message-box-title {
     margin-bottom: 15px;
     font-size: 20px;
     font-weight: 600;
-
   }
-  &__message-box-text{
+  &__message-box-text {
     margin-bottom: 20px;
     font-size: 14px;
     font-weight: 300;
   }
-  &__info{
+  &__info {
     max-width: 40%;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    &-list{
+    &-list {
       font-size: 36px;
       margin-bottom: 25px;
       display: flex;
       align-items: center;
 
-      &:nth-child(2){
+      &:nth-child(2) {
         font-size: 32px;
       }
-      &:nth-child(3){
+      &:nth-child(3) {
         font-size: 34px;
       }
-      span{
+      span {
         font-size: 24px;
         margin-left: 35px;
       }
-      a{
+      a {
         font-size: 24px;
         margin-left: 35px;
         &:hover,
-      &:active {
-        color: $red;
-        transform: scale(1.1);
-        font-weight: 600;
-      }
+        &:active {
+          color: $red;
+          transform: scale(1.1);
+          font-weight: 600;
+        }
       }
     }
-    &-social{
+    &-social {
       padding-top: 35px;
       font-weight: 700;
 
-      li{
+      li {
         display: inline-block;
         margin-left: 15px;
-        a{
+        a {
           font-size: 20px;
           &:hover,
-      &:active {
-        transform: scale(1.4);
-        color: $red;
-      }
+          &:active {
+            transform: scale(1.4);
+            color: $red;
+          }
         }
       }
-
     }
   }
 }
-
 
 .contact__form {
   .form-control {
@@ -1045,7 +1080,8 @@ position: fixed;
       // margin-top: 5px;
       bottom: -10px;
     }
-    input,textarea{
+    input,
+    textarea {
       border: 2px solid #f0f0f0;
       border-radius: 4px;
       display: block;
@@ -1055,19 +1091,18 @@ position: fixed;
       width: 100%;
       font-weight: 600;
     }
-    .check,.replace {
+    .check,
+    .replace {
       visibility: hidden;
       position: absolute;
       top: 12px;
       right: 10px;
       width: 15px;
-    
     }
     input:focus {
       outline: 0;
       border-color: #777;
     }
-    
   }
   button:disabled {
     background-color: rgba(251, 101, 113, 0.55);
@@ -1077,3 +1112,27 @@ position: fixed;
 }
 
 /* section contact end */
+
+/* --------------------Portfolio Page------------------ */
+.portfolio{
+  &__menu-wrapper{
+
+  }
+  &__menu{
+    display: flex;
+    justify-content: space-around;
+    &-btn{
+
+      &:hover,&:focus,&.active{
+        background-color: $bg;
+      }
+    }
+  }
+  &__wrapper{
+    margin-top: 70px;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}

@@ -18,7 +18,8 @@ function skills() {
         if (ifElementViewport(mainContainer[m])) {
           target.forEach((item, n) => {
             item[n] = +item.getAttribute('data-target');
-            const id = setInterval(frame, 200);
+            const id = setInterval(frame, 400);
+
             i = 0;
             function frame() {
               if (width >= item[n]) {
@@ -37,7 +38,7 @@ function skills() {
     });
   }
 }
-// window.addEventListener("load", skills);
-// window.addEventListener("resize", skills);
+window.addEventListener("load", skills);
+window.addEventListener("resize", skills);
 
 export default skills;

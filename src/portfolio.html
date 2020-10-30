@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <meta name="description" content=" " />
+    <meta name="keywords" content="" />
+    <title>My Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body class="site">
+    <main class="site-content">
+      @@include('./_modal.html') @@include('./_assideBar.html')
+      @@include('./_topBar.html') @@include('./_burger.html')
+      @@include('./_mobileMenu.html') @@include('./_header-portfolio.html')
+
+      <section class="portfolio desktop">
+        <div class="container">
+          <div class="section__title">
+            <h3>My Portfolio</h3>
+          </div>
+          <div class="portfolio__menu-wrapper desktop">
+            <div class="portfolio__menu">
+              <button class="portfolio__menu-btn btn" data-filter="all" autofocus=''>
+                All <span></span>
+              </button>
+              <button class="portfolio__menu-btn btn" data-filter="landing">
+                Landing Page <span></span>
+              </button>
+              <button class="portfolio__menu-btn btn" data-filter="jsscript">
+                JS Script <span></span>
+              </button>
+            </div>
+          </div>
+          <div class="portfolio__wrapper desktop">
+
+            <div class="work-container" data-cont="landing">
+              <div class="work__picture">
+                <img
+                  src="images/works/landing/portfolio-2.jpg"
+                  alt="Сharity assistance to children"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Landing Page</div>
+                <div class="work__tile">Сharity assistance to children</div>
+                <div class="work__description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Quisquam dolorem odio quia quos odit eum amet praesentium
+                  minima, laborum temporibus vel a! Sapiente facilis repudiandae
+                  inventore molestias itaque, magni aperiam.
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/variety/app/">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="jsscript">
+              <div class="work__picture">
+                <img
+                  src="images/works/scripts/portfolio_script-1.jpg"
+                  alt="CountDown JSScript"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Javascript script</div>
+                <div class="work__tile">Countdown Script </div>
+                <div class="work__description">
+                  Countdown script for web site on clear Javascript code (ES6) .
+
+                  With automatic year change on the background.
+                  Easy add to your project and customise as you need. 
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/timeCounter/dist/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="landing">
+              <div class="work__picture">
+                <img
+                  src="images/works/landing/portfolio-1.jpg"
+                  alt="My Work"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Landing Page</div>
+                <div class="work__tile">Russian fish company</div>
+                <div class="work__description">
+                  Landing page for a working fish processing company. One of my first works, implemented without GULP and Sass. Compliance with cross-browser compatibility and adaptation for mobile devices. The design is also mine))
+                </div>
+                <a class="work__link btn" href="https://garum.by/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="landing">
+              <div class="work__picture">
+                <img
+                  src="images/works/landing/portfolio-3.jpg"
+                  alt="Cleaning company website"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Landing Page</div>
+                <div class="work__tile">Cleaning company website</div>
+                <div class="work__description">
+                  Cleaning company website project. The project was created for practical exercise and professional development. The project was built with SASS, GULP, BEM, GitHub. Compliance with cross-browser compatibility and adaptation for mobile devices. 
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/cleaning__project/app/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="jsscript">
+              <div class="work__picture">
+                <img
+                  src="images/works/scripts/portfolio_script-2.jpg"
+                  alt="Auxiliary Panel"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Javascript script</div>
+                <div class="work__tile">Auxiliary Panel</div>
+                <div class="work__description">
+                  Auxiliary Fixed Panel for web site on clear Javascript code (ES6).
+                  With scale buttons and background change button. Script add the choice to your browser local storage. With clear button you also clear local storage.
+                  Easy add to your project and customise as you need. 
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/auxiliaryPanel/dist/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="landing">
+              <div class="work__picture">
+                <img
+                  src="images/works/landing/portfolio-4.jpg"
+                  alt="Recruiter agency website "
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Landing Page</div>
+                <div class="work__tile">Recruiter agency website</div>
+                <div class="work__description">
+                  Recruiter agency website, one of the first my project. The real project. Was built with SASS, GULP, BEM, GitHub. Compliance with cross-browser compatibility and adaptation for mobile devices (on picture). Now this Web running under Wordpress, making by me with Wordpress Elementor. 
+                </div>
+                <a class="work__link btn" href="https://eurojob.site/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="landing">
+              <div class="work__picture">
+                <img
+                  src="images/works/landing/portfolio-5.jpg"
+                  alt="Travell company website"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Landing Page</div>
+                <div class="work__tile">Travell company website</div>
+                <div class="work__description">
+                  Travell company website project (Russian Language). The project was created for practical exercise and professional development. The project was built with SASS, GULP, BEM, GitHub. Compliance with cross-browser compatibility and adaptation for mobile devices. 
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/capadocia/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="jsscript">
+              <div class="work__picture">
+                <img
+                  src="images/works/scripts/portfolio_script-3.jpg"
+                  alt="SingUp modal with validation"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Javascript script</div>
+                <div class="work__tile">SingUp modal with validation</div>
+                <div class="work__description">
+                  Singup modal with validation for web site on clear Javascript code (ES6).
+
+                  Validates input rows for text, numbers, email. Submit button is not active till all inputs are not filled. Sending Fetch POST object with user information.
+                  Easy add to your project and customise as you need. 
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/signup_modal/dist/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="landing">
+              <div class="work__picture">
+                <img
+                  src="images/works/landing/portfolio-6.jpg"
+                  alt="Restaurant website"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Landing Page</div>
+                <div class="work__tile">Restaurant website</div>
+                <div class="work__description">
+                  Restaurant website project. The project was created for practical exercise and professional development. The project was built with SASS, GULP, BEM, GitHub. Compliance with cross-browser compatibility and adaptation for mobile devices.  
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/restaurant/app/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+            <div class="work-container" data-cont="landing">
+              <div class="work__picture">
+                <img
+                  src="images/works/landing/portfolio-7.jpg"
+                  alt="Recruiter agency website (Ukraine)"
+                  class="work__picture-img"
+                  data-imgzoom
+                />
+              </div>
+              <div class="work__content">
+                <div class="work__type">Landing Page</div>
+                <div class="work__tile">Recruiter agency website (Ukraine)</div>
+                <div class="work__description">
+                  Recruiter agency website.Was built with SASS, GULP, Webpack, BEM, GitHub. The project was created for practical exercise and professional development. Compliance with cross-browser compatibility and adaptation for mobile devices. With out using JQuery. 
+                </div>
+                <a class="work__link btn" href="https://maksyig.github.io/wortex/dist/" target="_blank">Check Project Online</a>
+                <div class="work__create-icons-list">
+                  Created With:
+                  <li class="work-create-icon icon-html5"></li>
+                  <li class="work-create-icon icon-css3"></li>
+                  <li class="work-create-icon icon-javascript"></li>
+                  <li class="work-create-icon icon-sass"></li>
+                  <li class="work-create-icon icon-gulp"></li>
+                  <li class="work-create-icon icon-webpack"></li>
+                  <li class="work-create-icon icon-github"></li>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('./_footer.html')
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="js/main.bundle.js"></script>
+  </body>
+</html>
