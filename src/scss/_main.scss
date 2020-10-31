@@ -73,6 +73,7 @@
   }
   &__menu {
     padding-left: 25px;
+    font-family: 'Roboto', sans-serif;
     &-list {
       color: #fff;
       font-size: 20px;
@@ -210,6 +211,7 @@
   &__menu {
     display: flex;
     color: #fff;
+    font-family: 'Roboto', sans-serif;
     &-list {
       & + & {
         padding-left: 12px;
@@ -403,6 +405,7 @@
   }
   .mobile__menu {
     text-align: center;
+    font-family: 'Roboto', sans-serif;
     &-list {
       color: #fff;
       font-size: 20px;
@@ -417,6 +420,17 @@
     }
     &-link {
     }
+
+  }
+  .mobile__text{
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+    color: #fff;
+    font-weight: 600;
+    line-height: 32px;
+
+
   }
 }
 
@@ -561,15 +575,17 @@
   text-align: center;
   font-size: 18px;
   font-weight: 700;
+  
 
   .download {
     font-weight: 800;
     box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
+
     &:hover {
-      color: $red;
-      background-color: #fff;
-      font-weight: 800;
-      text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
+      // color: $red;
+      // background-color: #fff;
+      // font-weight: 800;
+      // text-shadow: -1px 0 #fff, 0 1px #fff, 1px 0 #fff, 0 -1px #fff;
     }
   }
 }
@@ -657,6 +673,14 @@
   color: $red;
   font-size: 24px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work__date{
+  font-size: 12px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
 }
 .work__tile {
   font-size: 20px;
@@ -682,6 +706,7 @@
   padding-top: 15px;
   color: #fff;
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
 }
 .work-create-icon {
   display: inline-block;
