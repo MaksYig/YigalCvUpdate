@@ -1,7 +1,7 @@
 
 function modalImg (modalEl,closeEl){
 const modal = document.querySelector(modalEl);
-const modalClose = document.querySelector(closeEl);
+const modalClose = modal.querySelector(closeEl);
 const img =document.querySelectorAll('[data-imgzoom]');
 const captionText = document.querySelector('.zoom__modal-caption');
 const modalImg = document.querySelector('.zoom__modal-content');
@@ -17,6 +17,12 @@ img.forEach(image =>{
   modalClose.addEventListener('click', ()=>{
     modal.style.display = 'none';
     document.querySelector('.site').style.overflow = '';
+  });
+  modal.addEventListener("click", (e) => {
+    if (e.target !== modalImg) {
+      modal.style.display = "none";
+      document.querySelector('.site').style.overflow = '';
+    }
   });
 
 });

@@ -3,7 +3,7 @@ import Swiper from 'swiper/bundle';
 function slider() {
   const headerSwiper = new Swiper('.header__swiper-container', {
     autoplay: {
-      delay: 5000
+      delay: 6000
     },
     loop: true,
     effect: 'fade',

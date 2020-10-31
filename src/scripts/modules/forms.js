@@ -2,12 +2,12 @@
  function form (formEl,nameEL,emailEl,messageEl,buttonEl){
    
   const form = document.querySelector(formEl);
-  const username = document.querySelector(nameEL);
-  const email = document.querySelector(emailEl);
-  const messageText = document.querySelector(messageEl);
+  const username = form.querySelector(nameEL);
+  const email = form.querySelector(emailEl);
+  const messageText = form.querySelector(messageEl);
   const formControl = form.querySelectorAll('.form-control');
-  const button = document.querySelector(buttonEl);
-
+  const button = form.querySelector(buttonEl);
+  const modal = document.querySelector(".contact__modal");
 
 
   function inputListenner() {
@@ -68,7 +68,7 @@
   form.addEventListener('submit', (e) => {
     const message = {
       loading: "Loading.....",
-      succes: "Thanks, for for your message",
+      succes: "Thanks, for for your message. I will contact you soon!",
       failure: "Error",
       
     };
@@ -94,7 +94,7 @@
       jsonObject[key] = value;
     }
     console.log(jsonObject);
-    const dataBase = '../../mail.php';
+    const dataBase = 'mail.php';
 
    async function postData (url, data){
       const response = await fetch (url, {
@@ -107,7 +107,8 @@
       if (response.ok) {
         console.log(response.status);
         
-        statusMesage.textContent = message.succes;
+        // statusMesage.textContent = message.succes;
+        showThanksModal(message.succes);
         form.reset();
         formReset ();
         
@@ -166,6 +167,34 @@
       item.querySelector('.check').style.visibility = "hidden";
 
     });
+  }
+
+  function showThanksModal(message) {
+    const prevModalBox = document.querySelector(".contact__modal-dialog");
+    modal.style.display = "block";
+    prevModalBox.style.display = "none";
+    const thanksModal = document.createElement("div");
+    thanksModal.classList.add("contact__modal-dialog");
+    thanksModal.innerHTML = `
+          <div class="contact__modal-content">
+          <div class="contact__modal-title">
+          ${message}</div></div>
+          `;
+    modal.append(thanksModal);
+    setTimeout(() => {
+      thanksModal.remove();
+      prevModalBox.style.display = "block";
+      modal.style.display = "none";
+      closeModal();
+    }, 4000);
+  }
+  function closeModal() {
+    modal.style.display = "none";
+    document.body.classList.remove("active");
+  }
+  function openModal() {
+    modal.style.display = "block";
+    document.body.classList.add("active");
   }
  }
 

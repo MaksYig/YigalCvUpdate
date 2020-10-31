@@ -5,9 +5,10 @@ import animation from './modules/animation';
 import skills from './modules/skills';
 import form from './modules/forms';
 import burger from './modules/burger';
-import modalImg from './modules/modal';
+import modalImg from './modules/modalImg';
 import portfolioToogleMenu from './modules/portfolioMenu';
 import scrollTo from './modules/scrollTo';
+import contactModal from './modules/contacModal';
 
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -19,6 +20,8 @@ const contactForm = new form ('.contact__form','.contact__name','.contact__email
 portfolioToogleMenu();
 burger();
 modalImg('.zoom__modal','.close');
+contactModal();
+
 
 
 

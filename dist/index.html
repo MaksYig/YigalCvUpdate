@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZK890395FH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-ZK890395FH');
+</script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="#" type="image/x-icon" />
-    <meta name="description" content=" " />
-    <meta name="keywords" content="" />
-    <title>Yigal Online CV</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <meta name="description" content=" Online CV Page of Front End Developer with Portfolio " />
+    <meta name="keywords" content="web, website, frontend,front end, developer, Yigal, Maksimov" />
+    <meta property="og:image" data-src="//maksydev.site/images/frontend.jpg" >
+    <meta property='og:url' content='https://maksydev.site/'/>
+    <title>Yigal Online CV Page</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
@@ -19,12 +29,63 @@
       <!-- Modal for Picture Zoom -->
 
 <div class="zoom__modal">
-  <span class="close">&times;</span>
-  <img class="zoom__modal-content">
-  <div class="zoom__modal-caption"></div>
+  <div class="zoom__modal-dialog">
+    <div class="zoom__modal-inner">
+      <span class="close">&times;</span>
+      <img class="zoom__modal-content">
+      <div class="zoom__modal-caption"></div>
+    </div>
+  </div>
 </div>
 
-<!-- Modal for Picture Zoom  END--> <div class="assidebar">
+<!-- Modal for Picture Zoom  END-->
+
+<!-- Contact modal -->
+<div class="contact__modal">
+  <div class="contact__modal-dialog">
+    <div class="contact__modal-content">
+      <span class="close">&times;</span>
+        <div class="contact__modal-title">
+          Thank you for contacting me
+        </div>
+        <div class="contact__modal-text">
+          Please fill the form and I will conntact you soon
+        </div>
+
+        <form class="modal__contact__form">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Yigal CV Site">
+          <input type="hidden" name="admin_email" value="maksylfd@gmail.com">
+          <input type="hidden" name="form_subject" value="Message from CV Site Modal">
+          <!-- Hidden Required Fields -->
+
+          <div class="form-control" data-status="false">
+          <input type="text" placeholder="Your name" class="contact__name" name="name" required/>
+          <img class="check" src="images/content/check.svg" alt=""></img>
+          <img class="replace" src="images/content/remove.svg" alt=""></img>
+          <span class="message">Error message</span>
+          </div>
+          <div class="form-control " data-status="false">
+          <input type="text" placeholder="Your email" class="contact__email" name="email" required/>
+          <img class="check" src="images/content/check.svg" alt=""></img>
+          <img class="replace" src="images/content/remove.svg" alt=""></img>
+          <span class="message">Error message</span>
+          </div>
+          <div class="form-control" data-status="false">
+          <textarea class="contact__message" name="message" cols="30" rows="6" placeholder="Your message here"></textarea>
+          <img class="check" src="images/content/check.svg" alt=""></img>
+          <img class="replace" src="images/content/remove.svg" alt=""></img>
+          <span class="message">Error message</span>
+          </div>
+          <button class="contact__btn btn" disabled='true'>Send message</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Contact modal --> <div class="assidebar">
   <div class="assidebar__wrapper">
     <div class="assidebar__logo">
       <img class="assidebar__logo-img" src="images/asside/avatar.jpg" alt="My avatar IMG" />
@@ -33,16 +94,16 @@
     </div>
     <div class="assidebar__social">
       <li class="assidebar__social-list">
-        <a class="assidebar__social-list-link icon-telegram" href="#"></a>
+        <a class="assidebar__social-list-link icon-telegram" title="Telegram" href="tg://resolve?domain=MaksYig"></a>
       </li>
       <li class="assidebar__social-list">
-        <a class="assidebar__social-list-link icon-facebook-square" href="#"></a>
+        <a class="assidebar__social-list-link icon-facebook-square" href="https://www.facebook.com/MaksyDev" target="_blank"></a>
       </li>
       <li class="assidebar__social-list ">
-        <a class="assidebar__social-list-link icon-linkedin-square" href="#"></a>
+        <a class="assidebar__social-list-link icon-linkedin-square" href="https://www.linkedin.com/in/yigal-maks-0572021b3" target="_blank"></a>
       </li>
       <li class="assidebar__social-list ">
-        <a class="assidebar__social-list-link icon-github-square" href="#"></a>
+        <a class="assidebar__social-list-link icon-github-square" href="https://github.com/MaksYig" target="_blank"></a>
       </li>
     </div>
     <menu class="assidebar__menu">
@@ -64,9 +125,9 @@
       <li class="assidebar__menu-list">
         <a class="assidebar__menu-list-link" href="portfolio.html">My Portfolio</a>
       </li>
-      <li class="assidebar__menu-list">
+      <!-- <li class="assidebar__menu-list">
         <a class="assidebar__menu-list-link" href="offers.html">My Offers</a>
-      </li>
+      </li> -->
       <li class="assidebar__menu-list">
         <a class="assidebar__menu-list-link" href="index.html#contact">My Contacts</a>
       </li>
@@ -92,7 +153,7 @@
       </div>
       <menu class="topbar__menu">
         <li class="topbar__menu-list">
-          <a class="topbar__menu-list-link" href="#">Home</a>
+          <a class="topbar__menu-list-link" href="index.html">Home</a>
         </li>
         <li class="topbar__menu-list">
           <a class="topbar__menu-list-link" href="index.html#aboutme">About Me</a>
@@ -109,9 +170,9 @@
         <li class="topbar__menu-list">
           <a class="topbar__menu-list-link" href="portfolio.html">My Portfolio</a>
         </li>
-        <li class="topbar__menu-list">
+        <!-- <li class="topbar__menu-list">
           <a class="topbar__menu-list-link" href="offers.html">My Offers</a>
-        </li>
+        </li> -->
         <li class="topbar__menu-list">
           <a class="topbar__menu-list-link" href="index.html#contact">My Contacts</a>
         </li>
@@ -137,16 +198,16 @@
     </div>
     <div class="mobile__social">
       <li class="mobile__social-list">
-        <a class="mobile__social-list-link icon-telegram" href="#"></a>
+        <a class="mobile__social-list-link icon-telegram" title="Telegram" href="tg://resolve?domain=MaksYig"></a>
       </li>
       <li class="mobile__social-list">
-        <a class="mobile__social-list-link icon-facebook-square" href="#"></a>
+        <a class="mobile__social-list-link icon-facebook-square" href="https://www.facebook.com/MaksyDev" target="_blank"></a>
       </li>
       <li class="mobile__social-list ">
-        <a class="mobile__social-list-link icon-linkedin-square" href="#"></a>
+        <a class="mobile__social-list-link icon-linkedin-square" href="https://www.linkedin.com/in/yigal-maks-0572021b3" target="_blank"></a>
       </li>
       <li class="mobile__social-list ">
-        <a class="mobile__social-list-link icon-github-square" href="#"></a>
+        <a class="mobile__social-list-link icon-github-square" href="https://github.com/MaksYig" target="_blank"></a>
       </li>
     </div>
     <menu class="mobile__menu">
@@ -168,9 +229,9 @@
       <li class="mobile__menu-list">
         <a class="mobile__menu-list-link" href="portfolio.html">My Portfolio</a>
       </li>
-      <li class="mobile__menu-list">
+      <!-- <li class="mobile__menu-list">
         <a class="mobile__menu-list-link" href="offers.html">My Offers</a>
-      </li>
+      </li> -->
       <li class="mobile__menu-list">
         <a class="mobile__menu-list-link" href="index.html#contact">My Contacts</a>
       </li>
@@ -187,11 +248,12 @@
               </div>
               <div class="header__text">
                 <h4>
-                  I'm a Web Developer (Junior) who prides himself on being a
+                  I'm a Web Front End Developer who prides himself on being a
                   strategic partner and an awesome product provider.
+                 <p>I will be happy to join your project and help you realize your dream.</p> 
                 </h4>
               </div>
-              <button class="header__btn btn">Send me message</button>
+              <button data-open class="header__btn btn">Send me message</button>
             </div>
           </div>
           <div class="swiper-slide"  style="background-image: url('images/header/bg4.jpg');">
@@ -201,24 +263,24 @@
               </div>
               <div class="header__text">
                 <h4>
-                  Using only valid code in my work. 
+                  I will help bring your dream design to life and turn it into a beautiful working website.
+                  You can see examples of my work by going to the portfolio link. You did the right thing to visit my page. Leave me a message and I will contact you. 
                 </h4>
               </div>
-              <button class="header__btn btn">My Portfolio</button>
+              <a href="portfolio.html" class="header__link btn">My Portfolio</a>
             </div>
           </div>
           <div class="swiper-slide"  style="background-image: url('images/header/bg2.jpg');">
             <div class="header__swiper-slide-wrapper">
               <div class="header__title">
-                <h1>Lets Make Something Great Together</h1>
+                <h1>There are no boundaries for perfection</h1>
               </div>
               <div class="header__text">
                 <h4>
-                  I'm a Web Developer (Junior) who prides himself on being a
-                  strategic partner and an awesome product provider.
+                  I am constantly improving my professional skills. In my spare time, I just animate site layouts. In my work, I try to use only clean code in modern standards. Maximum writing of your own scripts and minimum use of third-party libraries.
                 </h4>
               </div>
-              <button class="header__btn btn">Send me message</button>
+              <!-- <button class="header__btn btn">Send me message</button> -->
             </div>
           </div>
         </div>
@@ -328,7 +390,6 @@
                         <li class="work-create-icon icon-javascript"></li>
                         <li class="work-create-icon icon-sass"></li>
                         <li class="work-create-icon icon-gulp"></li>
-                        <li class="work-create-icon icon-webpack"></li>
                         <li class="work-create-icon icon-github"></li>
                       </div>
                     </div>
@@ -391,7 +452,6 @@
                         <li class="work-create-icon icon-javascript"></li>
                         <li class="work-create-icon icon-sass"></li>
                         <li class="work-create-icon icon-gulp"></li>
-                        <li class="work-create-icon icon-webpack"></li>
                         <li class="work-create-icon icon-github"></li>
                       </div>
                     </div>
@@ -474,6 +534,12 @@
                     resources.Learning the basics of HTML, CSS, BEM.
                   </div>
                 </li>
+                <li class="timeline__item">
+                  <div class="timeline__item-inner">
+                    <time>1990-2003 <span>High school&College</span></time>
+                    High School&College in Minsk (Belarus)
+                  </div>
+                </li>
               </ul>
             </section>
           </div>
@@ -493,7 +559,7 @@
                     <img
                     class="diploms__box-img"
                     src="images/diploms/java+react.jpg"
-                    alt="course JavaScript + React"
+                    alt="Course JavaScript + React"
                     data-imgzoom
                   />
                   <span class="diploms__box-text"
@@ -506,7 +572,7 @@
                     <img
                       class="diploms__box-img"
                       src="images/diploms/java_practic.jpg"
-                      alt="Full course practical"
+                      alt="Full course practical JScript"
                       data-imgzoom
                     />
                     <span class="diploms__box-text"
@@ -536,7 +602,7 @@
                     for acquaintances to improve their own qualifications
                   </div>
                 </li>
-                <li class="timeline__item">
+                <!-- <li class="timeline__item">
                   <div class="timeline__item-inner">
                     <time
                       >2018-2019
@@ -547,7 +613,7 @@
                     >
                     (Position is not related to web development)
                   </div>
-                </li>
+                </li> -->
                 <li class="timeline__item">
                   <div class="timeline__item-inner">
                     <time
@@ -717,10 +783,10 @@
         </li>
         <div class="contact__info-social">
           Follow me: 
-          <li class="contact__social-list"><a class="contact__social-link icon-linkedin-square" href=""></a></li>
-          <li class="contact__social-list"><a class="contact__social-link  icon-facebook-square" href=""></a></li>
-          <li class="contact__social-list"><a class="contact__social-link  icon-github-square" href=""></a></li>
-          <li class="contact__social-list "><a class="contact__social-link icon-telegram" href="" ></a></li>
+          <li class="contact__social-list"><a class="contact__social-link icon-linkedin-square" href="https://www.linkedin.com/in/yigal-maks-0572021b3" target="_blank"></a></li>
+          <li class="contact__social-list"><a class="contact__social-link  icon-facebook-square" href="https://www.facebook.com/MaksyDev" target="_blank"></a></li>
+          <li class="contact__social-list"><a class="contact__social-link  icon-github-square" href="https://github.com/MaksYig" target="_blank"></a></li>
+          <li class="contact__social-list "><a class="contact__social-link icon-telegram" title="Telegram" href="tg://resolve?domain=MaksYig"></a></li>
         </div>
       </div>
     </div>

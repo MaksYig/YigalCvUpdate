@@ -691,6 +691,9 @@
   color: $red;
   border: none;
   outline: none;
+  &:hover,&:focus{
+  color: $bg;
+  }
 }
 .swiper-button-prev.icon-arrow-circle-left {
   top: -5%;
@@ -1112,6 +1115,50 @@
     display: block;
   }
 }
+.modal__contact__form{
+  .form-control {
+    margin-bottom: 14px;
+    padding-bottom: 5px;
+    position: relative;
+    .message {
+      display: none;
+      position: absolute;
+      font-size: 11px;
+      padding-left: 10px;
+      color: red;
+      // margin-top: 5px;
+      bottom: -10px;
+    }
+    input,
+    textarea {
+      border: 2px solid #f0f0f0;
+      border-radius: 4px;
+      display: block;
+      font-family: inherit;
+      font-size: 16px;
+      padding: 10px 25px 10px 15px;
+      width: 100%;
+      font-weight: 600;
+    }
+    .check,
+    .replace {
+      visibility: hidden;
+      position: absolute;
+      top: 12px;
+      right: 10px;
+      width: 15px;
+    }
+    input:focus {
+      outline: 0;
+      border-color: #777;
+    }
+  }
+  button:disabled {
+    background-color: rgba(251, 101, 113, 0.55);
+    color: #fff;
+    display: block;
+  }
+}
 
 /* section contact end */
 
@@ -1153,6 +1200,7 @@
   border-radius: 50%;
   text-align: center;
   z-index: -1;
+  padding-top: 3px;
 
 }
 
@@ -1228,5 +1276,4 @@
 
   }
 }
-
 

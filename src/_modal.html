@@ -1,9 +1,60 @@
 <!-- Modal for Picture Zoom -->
 
 <div class="zoom__modal">
-  <span class="close">&times;</span>
-  <img class="zoom__modal-content">
-  <div class="zoom__modal-caption"></div>
+  <div class="zoom__modal-dialog">
+    <div class="zoom__modal-inner">
+      <span class="close">&times;</span>
+      <img class="zoom__modal-content">
+      <div class="zoom__modal-caption"></div>
+    </div>
+  </div>
 </div>
 
 <!-- Modal for Picture Zoom  END-->
+
+<!-- Contact modal -->
+<div class="contact__modal">
+  <div class="contact__modal-dialog">
+    <div class="contact__modal-content">
+      <span class="close">&times;</span>
+        <div class="contact__modal-title">
+          Thank you for contacting me
+        </div>
+        <div class="contact__modal-text">
+          Please fill the form and I will conntact you soon
+        </div>
+
+        <form class="modal__contact__form">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Yigal CV Site">
+          <input type="hidden" name="admin_email" value="maksylfd@gmail.com">
+          <input type="hidden" name="form_subject" value="Message from CV Site Modal">
+          <!-- Hidden Required Fields -->
+
+          <div class="form-control" data-status="false">
+          <input type="text" placeholder="Your name" class="contact__name" name="name" required/>
+          <img class="check" src="images/content/check.svg" alt=""></img>
+          <img class="replace" src="images/content/remove.svg" alt=""></img>
+          <span class="message">Error message</span>
+          </div>
+          <div class="form-control " data-status="false">
+          <input type="text" placeholder="Your email" class="contact__email" name="email" required/>
+          <img class="check" src="images/content/check.svg" alt=""></img>
+          <img class="replace" src="images/content/remove.svg" alt=""></img>
+          <span class="message">Error message</span>
+          </div>
+          <div class="form-control" data-status="false">
+          <textarea class="contact__message" name="message" cols="30" rows="6" placeholder="Your message here"></textarea>
+          <img class="check" src="images/content/check.svg" alt=""></img>
+          <img class="replace" src="images/content/remove.svg" alt=""></img>
+          <span class="message">Error message</span>
+          </div>
+          <button class="contact__btn btn" disabled='true'>Send message</button>
+        </form>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Contact modal -->

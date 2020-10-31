@@ -57,9 +57,9 @@ margin-left: 150px;
   font-weight: 500;
   cursor: pointer;
   text-align: center;
-  &:hover{
-    // box-shadow: 6px 6px 15px 0px rgba(168, 156, 157, 1);
-    // text-shadow: -1px 0 $bg, 0 1px $bg, 1px 0 $bg, 0 -1px $bg;
+  &:hover,&:focus{
+    box-shadow: 9px 7px 17px -4px rgba(0,53,53,0.6);
+    transform: scale(1.07);
   }
 }
 
@@ -122,7 +122,7 @@ margin-left: 150px;
   display: none; 
   position: fixed; 
   z-index: 110; 
-  padding-top: 100px; 
+  padding-top: 30px; 
   left: 0;
   top: 0;
   width: 100%;
@@ -130,17 +130,29 @@ margin-left: 150px;
   overflow: auto; 
   background-color: rgb(0,0,0); 
   background-color: rgba(0,0,0,0.9); 
+  &-dialog{
+    padding-top: 20px;
+    margin: 40px auto;
+  }
+  &-inner{
+    position: relative;
+    // width: 100%;
+    // padding: 40px;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+  }
+
   &-content{
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 900px;
   }
   &-caption{
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 900px;
     text-align: center;
     color: #ccc;
     padding: 10px 0;
@@ -150,8 +162,8 @@ margin-left: 150px;
 /* The Close Button */
 .close {
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: -50px;
+  right: 15px;
   color: #f1f1f1;
   font-size: 40px;
   font-weight: bold;
@@ -175,3 +187,56 @@ margin-left: 150px;
 }
 
 /* ---------Modal for Picture ZOOM end */
+
+/* contact modla */
+/* contact modal */
+.contact__modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0.5);
+  &-dialog{
+    max-width: 500px;
+    margin: 40px auto;
+  }
+  &-content{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 4px;
+    max-height: 80vh;
+    // overflow-y: auto; 
+    .close{
+    position: absolute;
+    top: 8px;
+    right: 14px;
+    font-size: 30px;
+    color: #000;
+    opacity: 0.5;
+    font-weight: 700;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    }
+  }
+  &-title{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+  }
+  &-text{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
