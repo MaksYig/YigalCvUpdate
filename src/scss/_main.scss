@@ -494,8 +494,11 @@
             margin: 0 auto;
             display: flex;
             color: #fff;
-            font-size: 20px;
-            line-height: 28px;
+            font-size: 22px;
+            line-height: 32px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+
 
             h4 {
               font-weight: 300;
@@ -575,7 +578,7 @@
   text-align: center;
   font-size: 18px;
   font-weight: 700;
-  
+
 
   .download {
     font-weight: 800;
@@ -701,6 +704,11 @@
   padding: 10px 15px;
   display: inline-block;
   margin: 15px auto 0 auto;
+  &:hover,&focus{
+    box-shadow: 3px 4px 11px -1px rgba(171,171,171,1);
+    transform: scale(1.07);
+  }
+
 }
 .work__create-icons-list {
   padding-top: 15px;
@@ -921,22 +929,6 @@
     border-color: transparent #f45b69 transparent transparent;
   }
 }
-// @media (max-width: 670px) {
-//   .timeline__item .timeline__item-inner {
-//     width: calc(100vw - 135px);
-//   }
-// }
-// @media screen and (max-width: 600px) {
-//   .timeline__item {
-//     margin-left: 20px;
-//   }
-
-//   .timeline__item:nth-child(even) .timeline__item-inner::before {
-//     left: -15px;
-//     border-width: 8px 16px 8px 0;
-//     border-color: transparent #f45b69 transparent transparent;
-//   }
-// }
 /* timeline for education an for work end */
 
 /* slills bar start */
@@ -1232,8 +1224,8 @@
   border-radius: 50%;
   text-align: center;
   z-index: -1;
-  padding-top: 3px;
-
+  padding-top: 5px;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -1304,8 +1296,95 @@
       }
     }
   }
-  &__btn{
-
-  }
 }
 
+/* -----------------------OFFER PAGE START ----------------------------------*/
+
+.calculator{
+  &__wrapper{
+
+  }
+  &__form{
+    .lable{
+      // display: block;
+      position: relative;
+      padding-left: 35px;
+      margin-bottom: 12px;
+      font-size: 22px;
+      user-select: none;
+      display: flex;
+      flex-direction: column;
+    }
+    input[type=radio]{
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+    .radiomark{
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: $red;
+      cursor: pointer;
+    }
+    &-wrapper{
+
+    }
+    .calc__row-inner{
+      display: flex;
+    }
+    &-text{
+
+    }
+
+    &-row-wrapper{
+      display: flex;
+    }
+
+    .icon-info-circle{
+      position: relative;
+      &:hover{
+        .form__info{
+          display: block;
+        }
+      }
+    }
+    .form__info{
+      position: absolute;
+      // max-width: 250px;
+      display: inline-flex;
+      width: 200px;
+      font-size: 10px;
+      font-weight: 300;
+      line-height: 12px;
+      text-align: center;
+      top: -35px;
+      right: 0;
+      padding: 3px 3px;
+      display: flex;
+      background-color: $red;
+      color: #fff;
+      border-radius: 7px;
+      display: none;
+      &::after{
+        content: "";
+        position: absolute;
+        // background-color: #000;
+        right: 10px;
+        bottom: -10px;
+        border: 5px solid transparent; border-top: 5px solid $red;
+      }
+    }
+
+  }
+  &__section-name{
+
+  }
+  .form__row{
+    
+  }
+}

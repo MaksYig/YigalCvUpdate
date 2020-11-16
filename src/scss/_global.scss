@@ -47,8 +47,7 @@ margin-left: 150px;
 }
 
 .btn {
-  background-color: $red;
-  font-family: 'Roboto', sans-serif;
+  background-color: rgba(251, 100, 112, 1);
   outline: none;
   border: none;
   padding: 10px 25px;
@@ -61,6 +60,7 @@ margin-left: 150px;
   &:hover,&:focus{
     box-shadow: 9px 7px 17px -4px rgba(0,53,53,0.6);
     transform: scale(1.07);
+
   }
 }
 
