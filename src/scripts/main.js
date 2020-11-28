@@ -21,7 +21,7 @@ portfolioToogleMenu();
 burger();
 modalImg('.zoom__modal','.close');
 contactModal();
-
+// scrollTo();
 
 
 
