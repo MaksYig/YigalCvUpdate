@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?4vlesf');
-  src:  url('../fonts/icomoon.eot?4vlesf#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?4vlesf') format('truetype'),
-    url('../fonts/icomoon.woff?4vlesf') format('woff'),
-    url('../fonts/icomoon.svg?4vlesf#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?q5c4qd');
+  src:  url('../fonts/icomoon.eot?q5c4qd#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?q5c4qd') format('truetype'),
+    url('../fonts/icomoon.woff?q5c4qd') format('woff'),
+    url('../fonts/icomoon.svg?q5c4qd#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -90,6 +90,10 @@
   content: "\e903";
   color: #da4648;
 }
+.icon-heroku:before {
+  content: "\e90d";
+  color: #430098;
+}
 .icon-html5:before {
   content: "\e904";
   color: #e34f26;
@@ -101,6 +105,18 @@
 .icon-linkedin:before {
   content: "\e90c";
   color: #0077b5;
+}
+.icon-mongodb:before {
+  content: "\e90e";
+  color: #47a248;
+}
+.icon-node-dot-js:before {
+  content: "\e90f";
+  color: #393;
+}
+.icon-postman:before {
+  content: "\e910";
+  color: #ff6c37;
 }
 .icon-react:before {
   content: "\e90a";

@@ -6,30 +6,30 @@ function portfolioToogleMenu (){
     const menu = document.querySelector('.portfolio__menu');
     const portfolioItem = document.querySelectorAll('.portfolio .work-container');
     const menuBtn = document.querySelectorAll('.portfolio__menu-btn');
-    const jsscript = document.querySelectorAll('[data-cont="jsscript"]');
-    const landing = document.querySelectorAll('[data-cont="landing"]');
+    const backend = document.querySelectorAll('[data-cont="backend"]');
+    const frontend = document.querySelectorAll('[data-cont="frontend"]');
 
     menuBtn[0].firstElementChild.textContent = portfolioItem.length;
-    menuBtn[1].firstElementChild.textContent = landing.length;
-    menuBtn[2].firstElementChild.textContent = jsscript.length;
+    menuBtn[1].firstElementChild.textContent = frontend.length;
+    menuBtn[2].firstElementChild.textContent = backend.length;
     
     menu.addEventListener('click',(e)=>{
       if (e.target && e.target.nodeName ===  "BUTTON"){
-        if (e.target.dataset.filter == 'jsscript'){
+        if (e.target.dataset.filter == 'backend'){
           portfolioItem.forEach(item =>{
-             if (item.dataset.cont !== 'jsscript'){
+             if (item.dataset.cont !== 'backend'){
               item.style.display = 'none';
-            }else if(item.dataset.cont == 'jsscript'){
+            }else if(item.dataset.cont == 'backend'){
               item.style.display = '';
             }
           });
         }
-        if (e.target.dataset.filter == 'landing'){
+        if (e.target.dataset.filter == 'frontend'){
           portfolioItem.forEach(item =>{
   
-             if (item.dataset.cont !== 'landing'){
+             if (item.dataset.cont !== 'frontend'){
               item.style.display = 'none';
-            }else if (item.dataset.cont == 'landing'){
+            }else if (item.dataset.cont == 'frontend'){
               item.style.display = '';
             }
           });

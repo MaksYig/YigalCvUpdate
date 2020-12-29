@@ -44,12 +44,11 @@ function slider() {
   });
 
   if (window.matchMedia("(max-width: 825px )").matches) {
-    console.log('New Slider');
     const diplomSlider = new Swiper('.diploms__swiper-container', {
       wrapperClass: 'diploms__swiper-wrapper',
       slidesPerView: 1,
-      autoplay:{
-        delay:2500
+      autoplay: {
+        delay: 2500
       },
       loop: true,
     });
